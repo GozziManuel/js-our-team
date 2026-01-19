@@ -22,3 +22,9 @@ body {
   color: rgba(229, 49, 112);
 }
 /* CARD */
+.carta {
+  height: 150px;
+  background-color: black;
+  box-sizing: border-box;
+  border-right: solid white 20px;
+}
