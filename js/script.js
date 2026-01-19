@@ -36,8 +36,8 @@ const teamMembers = [
     img: "img/female3.png",
   },
 ];
-const inputeImg = document.getElementById("inputimg");
-const inputeName = document.getElementById("inputname");
+const inputImg = document.getElementById("inputimg");
+const inputName = document.getElementById("inputname");
 const inputRole = document.getElementById("inputrole");
 const inputEmail = document.getElementById("inputemail");
 const cardList = document.getElementById("cardlist");
@@ -61,3 +61,22 @@ for (const members of teamMembers) {
     </div>`;
   cardList.innerHTML += cardHtml;
 }
+
+formAdder.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const cardHtml = `  <div class="carta col-lg-4 col-md-6 col-12 my-3 p-0 d-flex" id="user">
+      <img src="${inputImg.value}" alt="male1" />
+      <div class="d-flex flex-column px-3 my-3 justify-content-center">
+        <h2 class="fs-5 mb-2" style="color: white; font-weight: bold">
+          ${inputName.value}
+        </h2>
+        <p class="mb-2" style="color: white">
+          ${inputRole.value}
+        </p>
+        <p class="mb-2" style="color: white">
+          ${inputEmail.value}
+        </p>
+      </div>
+    </div>`;
+  cardList.innerHTML += cardHtml;
+});
