@@ -40,7 +40,7 @@ const cardList = document.getElementById("cardlist");
 
 for (const members of teamMembers) {
   const { name, role, email, img } = members;
-  const cardHtml = `  <div class="carta col-4 my-3 p-0 d-flex" id="user">
+  const cardHtml = `  <div class="carta col-lg-4 col-md-6 col-12 my-3 p-0 d-flex" id="user">
       <img src="${img}" alt="male1" />
       <div class="d-flex flex-column px-3 my-3 justify-content-center">
         <h2 class="fs-5 mb-2" style="color: white; font-weight: bold">
