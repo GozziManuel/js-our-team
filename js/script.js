@@ -36,7 +36,12 @@ const teamMembers = [
     img: "img/female3.png",
   },
 ];
+const inputeImg = document.getElementById("inputimg");
+const inputeName = document.getElementById("inputname");
+const inputRole = document.getElementById("inputrole");
+const inputEmail = document.getElementById("inputemail");
 const cardList = document.getElementById("cardlist");
+const formAdder = document.getElementById("formAdder");
 
 for (const members of teamMembers) {
   const { name, role, email, img } = members;
