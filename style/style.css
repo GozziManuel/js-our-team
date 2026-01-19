@@ -12,3 +12,13 @@ img {
 ul {
   list-style-type: none;
 }
+body {
+  font-family: "Fredoka", sans-serif;
+}
+/* HEADER */
+.title {
+  font-size: 60px;
+  margin-top: 70px;
+  color: rgba(229, 49, 112);
+}
+/* CARD */
